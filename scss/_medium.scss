@@ -1,0 +1,55 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul li {width: auto;}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+   main {
+        div#blackContent {
+            display: flex;
+            div#heroText2 {
+                padding-left: 1.5rem;
+            }
+       }
+       h2 {
+        padding-left: 2%;
+       }
+       div#cardWrapper {
+           display: grid;
+           grid-template-columns: repeat(6, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+           div.card {
+               grid-column-start: span 2;
+               p {
+                   font-size: .5rem;
+               }
+           }
+           div#long {
+            grid-column-start: span 4;
+           }
+           div#graph {
+               button {
+                   top: 70%;
+               }
+           }
+       }
+       div#logoWrapper {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: repeat(2, 1fr);
+       }
+   }
+
+/*----------- FOOTER --------------*/
+    

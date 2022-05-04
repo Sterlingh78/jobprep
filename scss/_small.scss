@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+   
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    padding: .5rem 2%;
+   
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+nav ul li {
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    color: gray;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+/*----------- MAIN --------------*/
+    main {
+        padding: .5rem 2%;
+        min-height: 10rem;
+        h2 {
+            text-transform: uppercase;
+        }
+        img {
+            width: 100%;
+        }
+    
+            div#blackContent h3 {
+                color: yellow;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            div#blackContent p {
+                color: white;
+                font-style: italic;
+            }
+            div#blackContent ul li {
+                color: white;
+            }
+            div#blackContent ul#noDecoration {
+                list-style: none;
+            }
+            div#blackContent {
+                background-color: black;
+                padding: 1.5rem 3000px;
+                margin: 0 -3000px;
+                div#heroText1 {
+                    padding-top: .5rem;
+                }
+                div#heroText2 {
+                    padding-top: .5rem;
+                }
+            }
+        div.card {
+            padding: 2%;
+            background-color: lightgrey;
+            margin: 2%;
+            img {
+                width: 100%;
+            }
+            h3 {
+                font-size: 1.3rem; 
+                color: #00acec;
+            }
+        }  
+        div#graph {
+            position: relative;
+            button {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #555;
+                color: white;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 5px;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+
+/*----------- FOOTER --------------*/
+div#footerWrapper {
+    background: rgb(0,172,236);
+    background: linear-gradient(0deg, rgba(0,172,236,1) 74%, rgba(45,47,253,1) 100%);
+    footer {
+        padding: .5rem 2%;
+        text-align: center;
+        p {
+            margin: 0 2%;
+            text-align: left;
+        }
+    }
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

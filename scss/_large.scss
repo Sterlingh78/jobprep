@@ -1,0 +1,53 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+main {
+        div#cardWrapper {
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                div.card {
+                        grid-column-start: span 3;
+                }
+                div.wide {
+                        grid-column-start: span 4;
+                }
+                div#graph {
+                        grid-row-start: 2;
+                        grid-row-end: 4;
+                        grid-column-start: 9;
+                        grid-column-end: 13;
+                        button {
+                                top: 30%;
+                        }
+                }
+                div#long {
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        grid-column-start: 1;
+                        grid-column-end: 9;
+                }
+        }
+        div#logoWrapper {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+        }
+}
+
+
+/*----------- FOOTER --------------*/
+    
